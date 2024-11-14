@@ -23,15 +23,23 @@ The pixelization detection tool uses image processing techniques to analyze the 
 
 ## Example Usage
 To illustrate the tool's use, consider two images:
-- One with **low pixelization**, such as a high-quality natural photo.
-- One with **high pixelization**, such as a compressed or low-resolution image.
+- One with **low pixelization**.
 
+![Captura de ecrã 2024-11-14 181328](https://github.com/user-attachments/assets/517bf759-812c-40c1-9847-32f9277d08b6)
+
+- One with **high pixelization**.
+![Captura de ecrã 2024-11-14 181424](https://github.com/user-attachments/assets/20ef22d3-4b26-4854-a14a-65741c6f3704)
 The tool will output a score indicating the extent of pixelization, which can be used to compare the two images.
+
+In these two examples, the low pixelization image gives an aligned ratio of 24.3%, and the high pixelized image has an aligned ratio of 62.69%. 
+Greater aligned ratio values are associated with greater pixelization of your image.
+
+Please adapt your threshold to your specific application.
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pixelization-detection-tool.git
+   git clone https://github.com/Movykappa/pixelization-quantification-tool.git
    ```
 2. Install the required dependencies:
    ```bash
@@ -41,7 +49,7 @@ The tool will output a score indicating the extent of pixelization, which can be
 ## Usage
 Run the script with the input image:
 ```bash
-python detect_pixelization.py --image path/to/your/image.jpg
+python pixelization-quantification-tool.py --image path/to/your/image.jpg
 ```
 
 The output will include the pixelization score and a visualization of the detected high-gradient regions.
@@ -53,5 +61,5 @@ Contributions are welcome! Feel free to fork the repository and submit pull requ
 This project is licensed under the MIT License.
 
 ## Authors
-- [Your Name] - Initial work
+- Mário Alberto Vieira - v1.0
 
